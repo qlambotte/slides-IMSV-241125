@@ -1,0 +1,205 @@
+[
+  {
+    "objectID": "slides.html#c-bombardement",
+    "href": "slides.html#c-bombardement",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "3.1.C) Bombardement",
+    "text": "3.1.C) Bombardement\nPremièrement, on représente la situation!\n\nOn doit chercher le point \\(A=(a,f(a))\\) tel que la tangente \\(\\text{tg}_a\\) en \\(A\\) (en bleu sur le dessin) passe par le point \\(D=(1,0)\\)."
+  },
+  {
+    "objectID": "slides.html#c-bombardement-1",
+    "href": "slides.html#c-bombardement-1",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "3.1.C) Bombardement",
+    "text": "3.1.C) Bombardement\nOn a:\n\n\\(\\text{tg}_a\\equiv y=mx+p\\), où \\(m=f'(a)=\\dfrac{-2}{a^3}\\).\n\\((a,f(a))\\in\\text{tg}_a\\). Donc \\(f(a)=f'(a)a+p\\). Donc \\(p=f(a)-f'(a)a\\).\n\\((1,0)\\in\\text{tg}_a\\). Donc \\(0=f'(a)+p\\). Donc \\(p=-f'(a)\\).\n\nDonc \\(-f'(a)=f(a)-f'(a)a\\)."
+  },
+  {
+    "objectID": "slides.html#c-bombardement-2",
+    "href": "slides.html#c-bombardement-2",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "3.1.C) Bombardement",
+    "text": "3.1.C) Bombardement\nDonc \\(-f'(a)=f(a)-f'(a)a\\). Or \\[\n\\begin{align*}\n-f'(a)=f(a)-f'(a)a&\\Leftrightarrow f(a)+f'(a)(1-a)=0\\\\\n&\\Leftrightarrow \\dfrac{1}{a^2}+\\dfrac{-2}{a^3}(1-a)=0\\\\\n&\\Leftrightarrow a-2(1-a)=0\\\\\n&\\Leftrightarrow 3a=2\\\\\n&\\Leftrightarrow a=\\dfrac{2}{3}\n\\end{align*}\n\\]\nDonc \\(A=(2/3;9/4)\\)."
+  },
+  {
+    "objectID": "slides.html#e-x10textcmpm-01textcm",
+    "href": "slides.html#e-x10textcmpm-01textcm",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "3.2.E) \\(x=10\\text{cm}\\pm 0,1\\text{cm}\\)",
+    "text": "3.2.E) \\(x=10\\text{cm}\\pm 0,1\\text{cm}\\)\n\nQue valent \\(\\epsilon_x\\) et \\(\\epsilon_{r,x}\\) (=erreur relative)?\n\n\\(\\epsilon_x=0,1\\text{cm}\\) et \\(\\epsilon_{r,x}=\\dfrac{0,1}{10}=1\\%\\).\n\nDT d’ordre 1 de \\(P(x)\\), le périmètre, en \\(a=10\\).\n\n\\(P(x)=4x\\). On veut \\(T[x]=P(10)+P'(10)(x-10)\\). Or \\(P'(x)=4\\).\nDonc \\(T[x]=40+4(x-10)=40+4x-40=4x\\). (Normal: P(x) est un polynôme de degré 1!)"
+  },
+  {
+    "objectID": "slides.html#e-x10textcmpm-01textcm-1",
+    "href": "slides.html#e-x10textcmpm-01textcm-1",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "3.2.E) \\(x=10\\text{cm}\\pm 0,1\\text{cm}\\)",
+    "text": "3.2.E) \\(x=10\\text{cm}\\pm 0,1\\text{cm}\\)\n\nQue valent \\(\\epsilon_A\\) et \\(\\epsilon_{r,A}\\), \\(A=\\) aire?\n\n\\(A(x)=x^2\\). Donc \\(A'(x)=2x\\).\nDonc \\(\\epsilon_A=\\left|A'(10)\\right|\\epsilon_x=2\\cdot 10\\cdot 0,1=2\\text{cm}^2\\).\nDonc \\(\\epsilon_{r,A}=\\dfrac{\\epsilon_A}{100}=2\\%\\).\n\n\\(S[x]=A(10)+A'(10)(x-10)=100+20(x-10)\\)."
+  },
+  {
+    "objectID": "slides.html#variations-et-extrémums",
+    "href": "slides.html#variations-et-extrémums",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "Variations et extrémums",
+    "text": "Variations et extrémums\nSoit \\(f\\) une fonction dérivable sur un intervalle \\(I\\). Alors:\n\n\\(f\\) est croissante sur \\(I\\) ssi \\(f'\\) est positive sur \\(I\\)\n\\(f\\) est décroissante sur \\(I\\) ssi \\(f'\\) est négative sur \\(I\\)"
+  },
+  {
+    "objectID": "slides.html#points-critiques",
+    "href": "slides.html#points-critiques",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "Points critiques",
+    "text": "Points critiques\nDe plus, à l’intérieur de \\(I\\) (càd pas aux bords de \\(I\\)), si \\(a\\) est un min/max, alors \\(a\\) est un point critique: \\(f'(a)=0\\).\nAttention ne pas confondre point critique et min/max: pensez à \\(x^3\\) où 0 est un point critique mais pas un min/max.\nPour \\(a\\) un point critique (\\(f'(a)=0\\)):\n\nSi \\(f''(a)&gt;0\\), alors \\(a\\) est un minimum\nSi \\(f''(a)&lt;0\\), alors \\(a\\) est un maximum.\nSi \\(f''(a)=0\\), on ne peut rien conclure et on doit passer par l’étude du signe de \\(f'\\)."
+  },
+  {
+    "objectID": "slides.html#étude-des-fonctions-1",
+    "href": "slides.html#étude-des-fonctions-1",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "Étude des fonctions",
+    "text": "Étude des fonctions\nAinsi, l’étude du signe de la dérivée d’une fonction permet d’en déduire ses variations et la nature des points critiques (la dérivée seconde peut être utilisée aussi)."
+  },
+  {
+    "objectID": "slides.html#a-qui-a-un-max-en-x2",
+    "href": "slides.html#a-qui-a-un-max-en-x2",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "3.3.A) Qui a un max en \\(x=2\\)?",
+    "text": "3.3.A) Qui a un max en \\(x=2\\)?\n\\(f_1(x)=x^2-4\\)"
+  },
+  {
+    "objectID": "slides.html#a-qui-a-un-max-en-x2-1",
+    "href": "slides.html#a-qui-a-un-max-en-x2-1",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "3.3.A) Qui a un max en \\(x=2\\)?",
+    "text": "3.3.A) Qui a un max en \\(x=2\\)?"
+  },
+  {
+    "objectID": "slides.html#a-qui-a-un-max-en-x2-2",
+    "href": "slides.html#a-qui-a-un-max-en-x2-2",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "3.3.A) Qui a un max en \\(x=2\\)?",
+    "text": "3.3.A) Qui a un max en \\(x=2\\)?\n\\(f_3(x)=x^3-5x^2+6x-4\\)"
+  },
+  {
+    "objectID": "slides.html#a-qui-a-un-max-en-x2-3",
+    "href": "slides.html#a-qui-a-un-max-en-x2-3",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "3.3.A) Qui a un max en \\(x=2\\)?",
+    "text": "3.3.A) Qui a un max en \\(x=2\\)?"
+  },
+  {
+    "objectID": "slides.html#a-qui-a-un-max-en-x2-4",
+    "href": "slides.html#a-qui-a-un-max-en-x2-4",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "3.3.A) Qui a un max en \\(x=2\\)?",
+    "text": "3.3.A) Qui a un max en \\(x=2\\)?\n\\(f_5(x)=\\cos\\left(\\dfrac{\\pi}{x}\\right)\\)"
+  },
+  {
+    "objectID": "slides.html#a-qui-a-un-max-en-x2-5",
+    "href": "slides.html#a-qui-a-un-max-en-x2-5",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "3.3.A) Qui a un max en \\(x=2\\)?",
+    "text": "3.3.A) Qui a un max en \\(x=2\\)?"
+  },
+  {
+    "objectID": "slides.html#b-etude-graphique-dune-fonction",
+    "href": "slides.html#b-etude-graphique-dune-fonction",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "3.3.B) Etude graphique d’une fonction",
+    "text": "3.3.B) Etude graphique d’une fonction\n\n\n\n\n\n\n\n\\(f'\\) est négative en \\(x=-3\\)?"
+  },
+  {
+    "objectID": "slides.html#b-etude-graphique-dune-fonction-1",
+    "href": "slides.html#b-etude-graphique-dune-fonction-1",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "3.3.B) Etude graphique d’une fonction",
+    "text": "3.3.B) Etude graphique d’une fonction\n\n\n\n\n\n\n\n\\(f\\) est croissante sur \\([1;2]\\)?"
+  },
+  {
+    "objectID": "slides.html#b-etude-graphique-dune-fonction-2",
+    "href": "slides.html#b-etude-graphique-dune-fonction-2",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "3.3.B) Etude graphique d’une fonction",
+    "text": "3.3.B) Etude graphique d’une fonction\n\n\n\n\n\n\nEsquisse de la dérivée de \\(f\\):"
+  },
+  {
+    "objectID": "slides.html#démarche",
+    "href": "slides.html#démarche",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "Démarche",
+    "text": "Démarche\nOptimiser= chercher une valeur qui maximise/minimise une quantité.\nPour résoudre un problème d’optimisation:\n\nReprésenter la situation si cela est possible.\nIdentifier si on cherche un min ou un max.\nModéliser la situation avec une fonction \\(f\\) d’une seule variable. S’il y a plusieurs variables (par ex. 2), éliminer une des variables avec une équation extraite de l’énoncé(si deux variables, alors on pourra extraire au moins deux équations qui lient ces variables et en éliminer une)\nÉtudier la nature des points critiques: résoudre \\(f'(x)=0\\) puis évaluer la dérivée seconde pour trouver la nature des points critiques. Si nécessaire, étudier le signe de \\(f'\\).\nConclure."
+  },
+  {
+    "objectID": "slides.html#a",
+    "href": "slides.html#a",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "3.4.A)",
+    "text": "3.4.A)\nConsidérons un rectangle de périmètre \\(P\\) constant. Déterminez les dimensions du rectangle dont la surface est maximale."
+  },
+  {
+    "objectID": "slides.html#a-1",
+    "href": "slides.html#a-1",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "3.4.A)",
+    "text": "3.4.A)"
+  },
+  {
+    "objectID": "slides.html#b",
+    "href": "slides.html#b",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "3.4.B)",
+    "text": "3.4.B)\nUn jardin rectangulaire de 75m2 doit être clôturé sur trois côtés par un mur dont le prix de revient est de 10 euros/mètre et sur le quatrième côté par une clôture dont le prix de revient est de 5 euros/mètre. Trouvez les dimensions du jardin qui minimisent le coût des matériaux utilisés."
+  },
+  {
+    "objectID": "slides.html#b-1",
+    "href": "slides.html#b-1",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "3.4.B)",
+    "text": "3.4.B)"
+  },
+  {
+    "objectID": "slides.html#b-2",
+    "href": "slides.html#b-2",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "3.4.B)",
+    "text": "3.4.B)"
+  },
+  {
+    "objectID": "slides.html#c",
+    "href": "slides.html#c",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "3.4.C)",
+    "text": "3.4.C)\nOn veut construire une boite rectangulaire sans couvercle de base carrée et de volume \\(32\\text{cm}^3\\) . Quelles sont les dimensions de la boite qui minimisent la surface de celle-ci ?"
+  },
+  {
+    "objectID": "slides.html#c-1",
+    "href": "slides.html#c-1",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "3.4.C)",
+    "text": "3.4.C)"
+  },
+  {
+    "objectID": "slides.html#d",
+    "href": "slides.html#d",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "3.4.D)",
+    "text": "3.4.D)\nPrépa pour le 1/12"
+  },
+  {
+    "objectID": "slides.html#e",
+    "href": "slides.html#e",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "3.4.E)",
+    "text": "3.4.E)\nDécomposez le nombre 150 en la somme de deux nombres tels que le produit de l’un par le carré de l’autre soit maximum."
+  },
+  {
+    "objectID": "slides.html#e-1",
+    "href": "slides.html#e-1",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "3.4.E)",
+    "text": "3.4.E)"
+  },
+  {
+    "objectID": "slides.html#qcm",
+    "href": "slides.html#qcm",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "QCM",
+    "text": "QCM\nA préparer pour le 1/12."
+  }
+]
