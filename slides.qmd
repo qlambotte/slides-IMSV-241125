@@ -1,0 +1,241 @@
+---
+title: "Introduction mathématique aux sciences de la vie"
+subtitle: "Séance d'exercices du 24/11/25"
+lang: fr
+format: 
+ revealjs:
+      theme: [default, clean.scss]
+      qrcode: 'assets/qrcode.png'
+      pdfl: '[Télécharger le PDF](assets/slides.pdf){.pdf-link target="_blank"}'
+      menu:
+        side: left
+      slide-number: true
+      transition: fade
+      revealjs-plugins:
+        - tldreveal
+      template-partials:
+        - title-slide.html
+
+---
+::: {.content-hidden}
+
+\newcommand{\dom}[1]{\text{dom}{\left(#1\right)}}
+\newcommand{\IR}{\mathbb{R}}
+\newcommand{\e}{\text{e}}
+
+\newcommand{\vect}[1]{\overrightarrow{#1}}
+\newcommand{\nv}[1]{\lVert\overrightarrow{#1}\rVert}
+
+:::
+
+
+# Remédiations
+ 
+- Lundi (Biologie): Q/R (Attention: début de la remédiation à 16h15)
+- Mardi matin (Bio+Biom): Quizz dérivées, révisions.
+- Mardi aprem (Biom): Q/R
+- Jeudi (Pharma): Quizz dérivées, révisions.
+
+**Pour les Q/R**: --> Préparez des questions !!!
+
+# Dérivées
+
+
+## 3.1.C) Bombardement
+
+Premièrement, on représente la situation!
+
+![](figures/fig1.png){width="80%"}
+
+On doit chercher le point $A=(a,f(a))$ tel que la tangente $\text{tg}_a$ en $A$ (en bleu sur le dessin) passe par le point $D=(1,0)$. 
+
+## 3.1.C) Bombardement
+
+On a:
+
+1. $\text{tg}_a\equiv y=mx+p$, où $m=f'(a)=\dfrac{-2}{a^3}$.
+2. $(a,f(a))\in\text{tg}_a$. Donc $f(a)=f'(a)a+p$. Donc $p=f(a)-f'(a)a$.
+3. $(1,0)\in\text{tg}_a$. Donc $0=f'(a)+p$. Donc $p=-f'(a)$.
+
+Donc $-f'(a)=f(a)-f'(a)a$.
+
+## 3.1.C) Bombardement
+
+Donc $-f'(a)=f(a)-f'(a)a$. Or
+$$
+\begin{align*}
+-f'(a)=f(a)-f'(a)a&\Leftrightarrow f(a)+f'(a)(1-a)=0\\
+&\Leftrightarrow \dfrac{1}{a^2}+\dfrac{-2}{a^3}(1-a)=0\\
+&\Leftrightarrow a-2(1-a)=0\\
+&\Leftrightarrow 3a=2\\
+&\Leftrightarrow a=\dfrac{2}{3}
+\end{align*}
+$$
+
+Donc $A=(2/3;9/4)$.
+
+## 3.2.E) $x=10\text{cm}\pm 0,1\text{cm}$
+
+1. Que valent $\epsilon_x$ et $\epsilon_{r,x}$ (=erreur relative)?
+
+$\epsilon_x=0,1\text{cm}$ et $\epsilon_{r,x}=\dfrac{0,1}{10}=1\%$.
+
+2. DT d'ordre 1 de $P(x)$, le périmètre, en $a=10$. 
+
+$P(x)=4x$. On veut $T[x]=P(10)+P'(10)(x-10)$. Or $P'(x)=4$. 
+
+Donc $T[x]=40+4(x-10)=40+4x-40=4x$. (Normal: P(x) est un polynôme de degré 1!)
+
+## 3.2.E) $x=10\text{cm}\pm 0,1\text{cm}$
+
+3. Que valent $\epsilon_A$ et $\epsilon_{r,A}$, $A=$ aire?
+
+$A(x)=x^2$. Donc $A'(x)=2x$. 
+
+Donc $\epsilon_A=\left|A'(10)\right|\epsilon_x=2\cdot 10\cdot 0,1=2\text{cm}^2$.
+
+Donc $\epsilon_{r,A}=\dfrac{\epsilon_A}{100}=2\%$.
+
+4. $S[x]=A(10)+A'(10)(x-10)=100+20(x-10)$.
+
+# Étude des fonctions
+
+## Variations et extrémums
+
+Soit $f$ une fonction dérivable sur un intervalle $I$. Alors:
+
+1. $f$ est croissante sur $I$ ssi $f'$ est positive sur $I$
+2. $f$ est décroissante sur $I$ ssi $f'$ est négative sur $I$
+
+
+
+## Points critiques 
+
+De plus, **à l'intérieur de $I$** (càd pas aux bords de $I$), si $a$ est un min/max, alors $a$ est un point critique: $f'(a)=0$. 
+
+**Attention** ne pas confondre point critique et min/max: pensez à $x^3$ où 0 est un point critique mais pas un min/max.
+
+Pour $a$ un point critique ($f'(a)=0$):
+
+1. Si $f''(a)>0$, alors $a$ est un minimum
+2. Si $f''(a)<0$, alors $a$ est un maximum.
+3. Si $f''(a)=0$, on ne peut rien conclure et on doit passer par l'étude du signe de $f'$.
+
+
+
+## Étude des fonctions
+
+Ainsi, l'étude du signe de la dérivée d'une fonction permet d'en déduire ses variations et la nature des points critiques (la dérivée seconde peut être utilisée aussi).
+
+![](figures/fig2.png){width="100%"}
+
+## 3.3.A) Qui a un max en $x=2$?
+
+$f_1(x)=x^2-4$
+
+## 3.3.A) Qui a un max en $x=2$?
+
+
+## 3.3.A) Qui a un max en $x=2$?
+
+$f_3(x)=x^3-5x^2+6x-4$
+
+## 3.3.A) Qui a un max en $x=2$?
+
+
+## 3.3.A) Qui a un max en $x=2$?
+
+$f_5(x)=\cos\left(\dfrac{\pi}{x}\right)$
+
+## 3.3.A) Qui a un max en $x=2$?
+
+
+## 3.3.B) Etude graphique d'une fonction
+
+:::::{layout="[0.5, 0.5]"}
+:::{#fst}
+![](figures/fig3.png){width="80%"}
+:::
+
+:::{#scd}
+1) $f'$ est négative en $x=-3$?
+:::
+:::::
+
+## 3.3.B) Etude graphique d'une fonction
+
+:::::{layout="[0.5, 0.5]"}
+:::{#fst}
+![](figures/fig3.png){width="80%"}
+:::
+
+:::{#scd}
+4) $f$ est croissante sur $[1;2]$?
+:::
+:::::
+
+## 3.3.B) Etude graphique d'une fonction
+
+:::::{layout="[0.5, 0.5]"}
+:::{#fst}
+![](figures/fig3.png){width="80%"}
+:::
+
+:::{#scd}
+Esquisse de la dérivée de $f$:
+:::
+:::::
+
+# Optimisation
+
+## Démarche
+
+Optimiser= chercher une valeur qui maximise/minimise une quantité.
+
+Pour résoudre un problème d'optimisation:
+
+0. Représenter la situation si cela est possible.
+1. Identifier si on cherche un min ou un max.
+2. Modéliser la situation avec une fonction $f$ d'une seule variable. S'il y a plusieurs variables (par ex. 2), éliminer une des variables avec une équation extraite de l'énoncé(si deux variables, alors on pourra extraire au moins deux équations qui lient ces variables et en éliminer une)
+3. Étudier la nature des points critiques: résoudre $f'(x)=0$ puis évaluer la dérivée seconde pour trouver la nature des points critiques. Si nécessaire, étudier le signe de $f'$.
+4. Conclure.
+
+## 3.4.A)
+
+Considérons un rectangle de périmètre $P$ constant. Déterminez les dimensions du rectangle dont la surface
+est maximale.
+
+## 3.4.A)
+
+## 3.4.B)
+
+Un jardin rectangulaire de 75m2 doit être clôturé sur trois côtés par un mur dont le prix de revient est de
+10 euros/mètre et sur le quatrième côté par une clôture dont le prix de revient est de 5 euros/mètre.
+Trouvez les dimensions du jardin qui minimisent le coût des matériaux utilisés.
+
+## 3.4.B)
+
+## 3.4.B)
+
+
+## 3.4.C)
+
+On veut construire une boite rectangulaire sans couvercle de base carrée et de volume $32\text{cm}^3$ . Quelles sont
+les dimensions de la boite qui minimisent la surface de celle-ci ?
+
+## 3.4.C)
+
+## 3.4.D)
+
+Prépa pour le 1/12
+
+## 3.4.E)
+
+Décomposez le nombre 150 en la somme de deux nombres tels que le produit de l’un par le carré de l’autre
+soit maximum.
+
+## 3.4.E)
+
+## QCM
+
+A préparer pour le 1/12.
